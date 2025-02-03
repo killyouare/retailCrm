@@ -31,7 +31,7 @@ type App struct {
 func New() (*App, error) {
 	var err error
 	app := &App{}
-
+	//в идеале всю инициализацию делать вне приложения, и передавать зависимости
 	if err = app.initConfig(); err != nil {
 		return nil, err
 	}
